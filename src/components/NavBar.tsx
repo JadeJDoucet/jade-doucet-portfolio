@@ -1,21 +1,21 @@
 import {
   useState,
   useEffect,
-} from 'react';
+} from 'react'
 import {
   Link,
   useLocation,
-} from 'react-router-dom';
+} from 'react-router-dom'
+import '../styles/NavBar.css'
 
-function NavBar() {
+const NavBar = () => {
   const [isSticky, setIsSticky] = useState(false);
   const location                = useLocation();
 
-
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 

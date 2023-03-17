@@ -1,0 +1,63 @@
+
+/* Clippy Nav Bar */
+.clippy-navbar-container {
+  position: fixed;
+  top: 30%;
+  right: 14%;
+  height: 100px;
+  z-index: 100;
+}
+
+.clippy-links {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.clippy-links a {
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.clippy-links a:hover {
+  color: #ff8c00;
+}
+
+.speech-bubble {
+  position: absolute;
+  top: -140px;
+  right: -150px;
+  width: 150px;
+  height: 130px;
+  background-color: #ffdd00;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 100;
+}
+
+.speech-bubble:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: -18px;
+  bottom: -20px;
+  transform: rotate(45deg);
+  border-width: 10px;
+  border-style: solid;
+  border-color: #ffdd00 transparent transparent transparent;
+}
+
+.speech-bubble-text {
+  font-size: 12 px;
+  color: #000;
+  text-align: center;
+  margin: 0;
+}

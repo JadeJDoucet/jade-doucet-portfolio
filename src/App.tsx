@@ -8,11 +8,13 @@ import About      from './pages/About';
 import Experience from './pages/Experience';
 import NavBar     from './components/NavBar';
 import Projects   from './pages/Projects';
+import NavBarClippy from './components/NavBarClippy';
 
-function App() {
+const App = () => {
   return (
     <Router>
       <NavBar />
+      <NavBarClippy />
 
       <Routes>
         <Route path="/" element={<About />} />

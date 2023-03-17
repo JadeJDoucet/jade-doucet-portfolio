@@ -1,6 +1,6 @@
-  /* eslint-disable react/prefer-stateless-function */
-  /* eslint-disable max-classes-per-file */
-  /* eslint-disable import/no-duplicates */
+/* eslint-disable react/prefer-stateless-function */
+/* eslint-disable max-classes-per-file */
+/* eslint-disable import/no-duplicates */
 
 // types/react-reveal/index.d.ts
 /// <reference types="node" />
