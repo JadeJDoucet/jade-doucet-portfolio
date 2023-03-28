@@ -1,14 +1,19 @@
-import { useEffect, useState } from 'react';
+import {
+  useEffect,
+  useState,
+} from 'react';
 import {
   Link,
   useLocation,
 } from 'react-router-dom';
+import { usePagesVisited } from '../contexts/visited-context';
+
 import '../styles/NavBarClippy.css'
 
 const NavBarClippy = () => {
   const location = useLocation();
   const [isClippyVisible, setIsClippyVisible] = useState(true);
-
+  const { addPage, removePage, clearPages, state } = usePagesVisited();
   // todo: check mark next to each page viewed and strike through item (but still clickable when not current page)
   //  Maybe create context for this, use context to store state of each page visited
 
@@ -17,9 +22,14 @@ const NavBarClippy = () => {
     if (window.innerWidth < 768) {
       setIsClippyVisible(false);
     }
+
+    addPage(location.pathname);
   },
   []
   )
+
+  // Check if state contains each of the pages, if it does - add a 'visited' class to the link
+  // console.log(state);
 
   return (
     isClippyVisible

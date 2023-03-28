@@ -36,8 +36,8 @@ const NavBar = () => {
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/experience" className={`navbar-link ${location.pathname === '/portfolio' ? 'active' : ''}`}>
-            Portfolio
+          <Link to="/experience" className={`navbar-link ${location.pathname === '/experience' ? 'active' : ''}`}>
+            Experience
           </Link>
         </li>
         <li className="navbar-item">
